@@ -1,5 +1,6 @@
 import { imgSrcConstructor } from "./utils";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 /** Dog component that shows a Dog.
  *
@@ -40,6 +41,7 @@ function Dog({ dogs }) {
           })}
         </ul>
       </div>
+      <Link to="/">Back to all dogs</Link>
     </div>
   );
 
