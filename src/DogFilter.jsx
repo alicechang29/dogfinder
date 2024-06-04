@@ -31,11 +31,13 @@ function DogFilter({ dogs }) {
         <Link to="/">Back to all dogs</Link>
       </div>
     );
+  } else {
+    return (
+      <Dog dog={dog} />
+    );
   }
 
-  return (
-    <Dog dog={findDog} />
-  );
+
 }
 
 
